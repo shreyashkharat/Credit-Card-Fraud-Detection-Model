@@ -76,5 +76,5 @@ set.seed(0)
 # The K Nearest Neighbor model is a lazy algorithm, hence computationally expensive for large data sets.
 # I have written the necessary code but due to unavailability of required computational strength, 
 # the observations for K Nearest Neighbor are not mentioned.
-
-# Overall the Quadratic Discriminant Analysis gave the highest total and conditional accuracy as 0.9992 and 0.8205 resp.
+# The Logistic Regression and Linear Discriminant Analysis model have equal total accuracy of 0.9992.
+# The Quadratic Discriminant Analysis gave the highest conditional accuracy as 0.8205.
