@@ -27,9 +27,9 @@ logi_predict[logi_prob > 0.5] <- "YES"
 # Confusion Matrix
 table(logi_predict, test_set$Class)
 (64184 + 78)/64313
-# The Logistic Regression Model gives an accuracy of 0.9992.
+# The Logistic Regression Model gives an R^2 value of 0.9992.
 78/(78+39)
-# The Logistic Regression Model gives an accuracy of 0.6667 for fraudulent transactions.
+# The Logistic Regression Model gives an R^2 value of 0.6667 for fraudulent transactions.
 # So, this model is moderately accurate.
 
 # Linear Discriminant Analysis Model
@@ -42,9 +42,9 @@ lda_predict <- lda_probs$class
 # Confusion Matrix
 table(lda_predict, test_set$Class)
 (64181 + 84)/64313
-# The Linear Discriminant Analysis model gives an accuracy of 0.9992.
+# The Linear Discriminant Analysis model gives an R^2 value of 0.9992.
 84/(84+33)
-# The Linear Discriminant Analysis model gives an accuracy of 0.7179 for fraudulent transactions.
+# The Linear Discriminant Analysis model gives an R^2 value of 0.7179 for fraudulent transactions.
 # So, this model is also moderately accurate.
 
 # Quadratic Discriminant Analysis Model
@@ -56,9 +56,9 @@ qda_predict <- qda_probs$class
 # Confusion Matrix
 table(qda_predict, test_set$Class)
 (62624 + 96)/64313
-# The Quadratic Discriminant Analysis model gives an accuracy of 0.9752.
+# The Quadratic Discriminant Analysis model gives an R^2 value of 0.9752.
 96/(96+21)
-# The Quadratic Discriminant Analysis model gives an accuracy of 0.8205 for fraudulent transactions.
+# The Quadratic Discriminant Analysis model gives an R^2 value of 0.8205 for fraudulent transactions.
 # So, this model is highly accurate.
 
 # K Nearest Neighbor Model
@@ -76,5 +76,5 @@ set.seed(0)
 # The K Nearest Neighbor model is a lazy algorithm, hence computationally expensive for large data sets.
 # I have written the necessary code but due to unavailability of required computational strength, 
 # the observations for K Nearest Neighbor are not mentioned.
-# The Logistic Regression and Linear Discriminant Analysis model have equal total accuracy of 0.9992.
-# The Quadratic Discriminant Analysis gave the highest conditional accuracy as 0.8205.
+# The Logistic Regression and Linear Discriminant Analysis model have equal total R^2 of 0.9992.
+# The Quadratic Discriminant Analysis gave the highest conditional R^2 as 0.8205.
